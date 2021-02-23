@@ -1,0 +1,160 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10000;
+text-transform:capitalize;
+
+}
+
+h2{
+    font-size: 24px;
+    color: goldenrod;
+    background: transparent;
+  
+}
+header #toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+}
+
+header #toggle:before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background:white;
+}
+header #toggle::after{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.banner.active header #toggle:before{
+   top: 50%;
+   right: 50%;
+   transform: translate(-50%,-50%) rotate(45deg);
+
+}
+.banner.active header #toggle::after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+ 
+ }
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background:transparent;
+    background:url("fondo2.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+z-index: 2;
+}
+.titulo{
+    position: absolute;
+    right: 10px;
+}
+.banner.active{
+    transform: translateX(300px);
+}
+#navigation{
+    position: fixed;
+    top: 0;
+    left:10px;
+    width: 400px;
+    height: 100vh;
+    background:black;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+#navigation.active{
+    right: 0;
+}
+#navigation ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+#navigation ul li{
+    list-style: none;
+}
+#navigation ul li a{
+    color:goldenrod;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.content{
+ max-width: 600px;   
+ text-transform: uppercase;
+}
+.content h2{
+    color:goldenrod;
+    font-size: 36px;
+    animation: text 3s 1;
+    background: transparent;
+     
+}
+
+.content p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    background: transparent;
+}
+
+.sci{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 100px;
+
+}
+
+footer{
+    background: black;
+    width: 100%;
+    padding: 65px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+@media (max-width: 767px){
+    header{
+        padding: 20px 50px;
+    }
+    .banner{
+        padding: 100px 50px 150px;
+    }
+}

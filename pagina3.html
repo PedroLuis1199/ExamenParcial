@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <title>Contáctame</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+    <div class="container" >
+
+        <div class="row">
+            <div class="col col-sm-12"></div>
+            <header>
+                
+                <div id="toggle" onclick="toggle()"></div>
+                ¡Si necesitas contactarme!
+            </header>
+        </div>    
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12"></div>
+            <section class="centro">
+            <label class="asunto1">Asunto:</label>
+            <input class="asunto" type="text">
+
+            <label class="correo1">Correo:</label>
+            <input class="correo" type="text">
+
+            <label class="des1" >Descripcion:</label>
+            <textarea class="area" name="w3review" rows="10" cols="50">
+                
+                </textarea>
+
+                <button>Contactar</button>
+                <button class="cancelar">Cancelar</button>
+            </section>
+        </div>   
+
+        <div class="row">
+            <div class="col-sm-12"></div> 
+            <footer>
+                
+            </footer> 
+        </div>
+</section>
+
+<footer class="footer">
+    Correo: pedroluisnunez4@gmail.com
+    <br>
+    Telefono: 85-74-12-38
+</footer>
+        <div id="navigation">
+            <ul>
+                <li><img src="icon.png" width="32" height="32" alt=""><a href="index.html">Inicio </a></li>
+                <li><img src="icon.png" width="32" height="32" alt=""><a href="pagina2.html">Acerca de</a></li>
+                <li><img src="icon.png" width="32" height="32" alt=""><a href="pagina3.html">Contáctame</a></li>
+                
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+                var sec = document.getElementById('sec');
+                var nav = document.getElementById('navigation');
+                sec.classList.toggle('active');
+                nav.classList.toggle('active');
+            }
+        </script>
+    </div>
+</body>
+</html>

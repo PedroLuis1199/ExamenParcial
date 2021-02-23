@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <h2 class="titulo">Mi pagina</h2>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Bienvenido</h2>
+
+            <p>Mi nombre es Pedro Luis Núñez Navarro, naci el 11 de Junio de 1999<br>
+               y toda mi vida he vida he vivido en la comunidad de LLano los Ángeles<br>
+               de la provincia de Cartago. Me considero una persona responsable y <br>
+               respetuosay soy creyente de que estos valores y su precensia en la <br> 
+               vida de las    personas son fundamentales.<br>
+              
+            </p>
+        </div>
+       
+    </section>
+    
+
+
+    <div id="navigation">
+        <ul>
+           
+            <li><img src="icon.png" width="32" height="32" alt="">Java</figure><a href="index.html">Inicio </a></li>
+                <li><img src="icon.png" width="32" height="32" alt="">Java</figure><a href="pagina2.html">Acerca de</a></li>
+                <li><img src="icon.png" width="32" height="32" alt="">Java</figure><a href="pagina3.html">Contáctame</a></li>
+            
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <footer>
+        Derechos reservados Pedro Luis Nuñez Navarro <br>2021
+    </footer>
+</body>
+</html>
